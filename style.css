@@ -31,3 +31,25 @@ p {
 	color: #000000 !important;
 	background-color: #ffcc00 !important;
 }
+.woocommerce-tabs {
+  display: none;
+}
+.single-product .variations_form select{
+  background-color: #222;
+  color: #ffcc00;
+  border: 1px solid #ffcc00;
+}
+.empty-circle {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffcc00;
+  background-color: #222;
+}
+.full-circle {
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ffcc00;
+  background-color: #ffcc00;
+}
