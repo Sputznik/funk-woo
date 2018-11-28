@@ -39,7 +39,7 @@ function funk_product_attributes(){
       <div class="col-sm-8">
         <ul>
           <?php
-            for ($i,$i < 5,$i++) {
+            for ($i=0;$i < 5;$i++) {
               if ($i < $length) {
               ?>
                 <li class="full-circle"></li>
