@@ -22,3 +22,5 @@ function single_variation_price( $price, $product ) {
 
 
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs');
+
+add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 25 );
