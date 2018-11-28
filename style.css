@@ -9,3 +9,25 @@
  Tags: right-sidebar, left-sidebar, custom-menu, post-formats, theme-options, translation-ready, e-commerce, footer-widgets, editor-style
  Text Domain:  martivi-child
 */
+.input-text, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], textarea {
+  color: #ffcc00;
+  background-color: #222;
+  border: 1px solid #ffcc00;
+}
+.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+	background-color: #ed008c;
+}
+.button:not(:disabled):hover, input[type="submit"]:not(:disabled):hover {
+	color: #000;
+  background-color: #ed008c;
+}
+p {
+  color: #ddd;
+}
+.woocommerce div.product form.cart .variations {
+  margin:0;
+}
+.single-product .product form.cart .button, .mobile-nav-btn span {
+	color: #000000 !important;
+	background-color: #ffcc00 !important;
+}
