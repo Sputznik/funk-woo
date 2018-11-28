@@ -19,3 +19,6 @@ function single_variation_price( $price, $product ) {
      $price .= wc_price($product->get_price()); 
      return $price;
 }
+
+
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs');
