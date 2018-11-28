@@ -31,6 +31,9 @@ p {
 	color: #000000 !important;
 	background-color: #ffcc00 !important;
 }
+.woocommerce div.product .cart .button{
+  margin-left: 0px;
+}
 .woocommerce-tabs {
   display: none;
 }
@@ -52,4 +55,7 @@ p {
   height: 10px;
   border: 1px solid #ffcc00;
   background-color: #ffcc00;
+}
+.wc-length-weight ul li {
+  display: inline;
 }
