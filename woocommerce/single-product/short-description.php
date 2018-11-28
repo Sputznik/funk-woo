@@ -33,4 +33,4 @@ if ( ! $short_description ) {
 	<?php echo ''. $short_description; // WPCS: XSS ok. ?>
 </div>
 
-hello check
+<?php do_action( 'woocommerce_output_product_data_tabs' );?>
