@@ -20,7 +20,15 @@ function single_variation_price( $price, $product ) {
      return $price;
 }
 
-
+// HIDE TABS FROM THE ONE THAT IS BELOW THE SUMMARY
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs');
 
-add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 25 );
+// INCLUDE TABS JUST BELOW THE PRODUCT SUMMARY
+add_action( 'woocommerce_single_product_summary', 'funk_product_attributes', 25 );
+
+
+function funk_product_attributes(){
+	global $product;
+	$length = $product->get_attribute( 'length' );
+	echo $length;
+}
