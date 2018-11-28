@@ -30,5 +30,7 @@ add_action( 'woocommerce_single_product_summary', 'funk_product_attributes', 25 
 function funk_product_attributes(){
 	global $product;
 	$length = $product->get_attribute( 'length' );
+	$weight = $product->get_attribute( 'weight' );
 	echo $length;
+	echo $weight;
 }
