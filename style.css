@@ -58,4 +58,10 @@ p {
 }
 .wc-length-weight ul li {
   display: inline;
+	margin: 0 5px;
+	padding: 0 5px;
+}
+.woo-select::after{
+  color:#ffcc00;
+  top:30%;
 }

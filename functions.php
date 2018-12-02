@@ -35,12 +35,30 @@ function funk_product_attributes(){
 	echo $weight;
   ?>
     <div class="row wc-length-weight">
-      <div class="col-sm-4">Length:</div>
-      <div class="col-sm-8">
+      <div class="col-sm-2">Length:</div>
+      <div class="col-sm-10">
         <ul>
           <?php
             for ($i=0;$i < 5;$i++) {
               if ($i < $length) {
+              ?>
+                <li class="full-circle"></li>
+              <?php
+              } else {
+                ?>
+                  <li class="empty-circle"></li>
+                <?php
+              }
+            }
+          ?>
+        </ul>
+      </div>
+      <div class="col-sm-2">Weight:</div>
+      <div class="col-sm-10">
+        <ul>
+          <?php
+            for ($i=0;$i < 5;$i++) {
+              if ($i < $weight) {
               ?>
                 <li class="full-circle"></li>
               <?php
