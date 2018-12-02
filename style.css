@@ -5,7 +5,7 @@
  Author:       TheSpan and Sputznik
  Author URI:   https://sputznik.com
  Template:     martivi
- Version:      1.0
+ Version:      1.1
  Tags: right-sidebar, left-sidebar, custom-menu, post-formats, theme-options, translation-ready, e-commerce, footer-widgets, editor-style
  Text Domain:  martivi-child
 */
@@ -56,12 +56,28 @@ p {
   border: 1px solid #ffcc00;
   background-color: #ffcc00;
 }
+.wc-length-weight {
+  color:#999;
+  font-size: 15px;
+  font-weight: 600;
+}
+.wc-length-weight ul {
+  margin-bottom: 10px;
+}
 .wc-length-weight ul li {
   display: inline;
 	margin: 0 5px;
 	padding: 0 5px;
 }
-.woo-select::after{
-  color:#ffcc00;
-  top:30%;
+.woo-select::after {
+	content: '\25BE';
+	width: 10px;
+	height: 10px;
+	margin-top: -5px;
+	font-size: 19px;
+	line-height: .5em;
+	position: absolute;
+	top: 30%;
+	right: 15px;
+  color: #ffcc00;
 }

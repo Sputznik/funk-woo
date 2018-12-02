@@ -35,7 +35,7 @@ function funk_product_attributes(){
 	echo $weight;
   ?>
     <div class="row wc-length-weight">
-      <div class="col-sm-2">Length:</div>
+      <div class="col-sm-2">Length</div>
       <div class="col-sm-10">
         <ul>
           <?php
@@ -53,7 +53,7 @@ function funk_product_attributes(){
           ?>
         </ul>
       </div>
-      <div class="col-sm-2">Weight:</div>
+      <div class="col-sm-2">Weight</div>
       <div class="col-sm-10">
         <ul>
           <?php
