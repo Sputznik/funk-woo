@@ -29,10 +29,10 @@ add_action( 'woocommerce_single_product_summary', 'funk_product_attributes', 25 
 //redo
 function funk_product_attributes(){
 	global $product;
+  $product_cat = $product->get_category_ids();
+  echo $product_cat;
 	$length = $product->get_attribute( 'length' );
 	$weight = $product->get_attribute( 'weight' );
-	echo $length;
-	echo $weight;
   ?>
     <div class="row wc-length-weight">
       <div class="col-sm-2">Length</div>
