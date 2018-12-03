@@ -75,3 +75,46 @@ function funk_product_attributes(){
   <?php
   }
 }
+//overriding homepage function for recent products
+if ( ! function_exists( 'martivi_recent_products' ) ) {
+	/**
+	 * Display Recent Products
+	 * Hooked into the `martivi-homepage` action in the homepage template
+	 *
+	 * @since  1.0.0
+	 * @param array $args the product section args.
+	 * @return void
+	 */
+	function martivi_recent_products( $args ) {
+
+		if ( martivi_is_woocommerce_activated() ) {
+
+			global $post;
+
+			// get post meta data
+			$box_title 	= get_post_meta( $post->ID, 'martivi_recent_products_box_title', true );
+			$box_desc 	= get_post_meta( $post->ID, 'martivi_recent_products_box_desc', true );
+
+			$args = array(
+				'limit' 			=> 8,
+				'columns' 			=> 4
+			);
+
+			echo '<div class="container">';
+
+			echo '<div class="box-title">';
+
+				echo '<h3>' . wp_kses_post( $box_title ) . '</h3>';
+				echo '<p>' . wp_kses_post( $box_desc ) . '</p>';
+
+			echo '</div>';
+
+			echo martivi_do_shortcode( 'recent_products', array(
+				'per_page' => intval( $args['limit'] ),
+				'columns'  => intval( $args['columns'] ),
+			) );
+
+			echo '</div>';
+		}
+	}
+}

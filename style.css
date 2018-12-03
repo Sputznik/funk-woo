@@ -86,3 +86,15 @@ p {
 	margin-bottom: 15px;
 	color: inherit;
 }
+.search-wrap{
+  background: #111;
+}
+.search-wrap-close{
+  color:#fff;
+}
+.search-wrap .search-form .search-field{
+  border: 1px solid #ffcc00;
+}
+.input-text:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, textarea:focus{
+  color:#eee;
+}
