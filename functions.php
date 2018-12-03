@@ -30,7 +30,7 @@ add_action( 'woocommerce_single_product_summary', 'funk_product_attributes', 25 
 function funk_product_attributes(){
 	global $product;
   $product_cat = $product->get_category_ids();
-  echo $product_cat;
+  if ($product_cat[0] == 15 || $product_cat[0] == 18) {
 	$length = $product->get_attribute( 'length' );
 	$weight = $product->get_attribute( 'weight' );
   ?>
@@ -73,4 +73,5 @@ function funk_product_attributes(){
       </div>
     </div>
   <?php
+  }
 }
