@@ -114,7 +114,20 @@ if ( ! function_exists( 'martivi_recent_products' ) ) {
 				'columns'  => intval( $args['columns'] ),
 			) );
 
+
+			?>
+				<div class="row">
+					<div class="col-sm-12" style="text-align:center;">
+						<button class="funk-button-pink" href="https://funkanatomy.com/shop">
+							I Want To See More!
+						</button>
+					</div>
+				</div>
+
+			<?php
+
 			echo '</div>';
 		}
 	}
 }
+//overriding tab products function
