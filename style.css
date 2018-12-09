@@ -112,10 +112,38 @@ p {
 	text-align: center;
 	border: 1px solid #ffcc00;
 }
-funk-button-pink {
+.funk-button-pink {
 	margin: 0 auto 60px;
 	width: 300px;
 	font-weight: 700;
 	font-size: 20px;
 	font-family: "Roboto Slab";
+}
+.woocommerce .cart-collaterals .cart_totals {
+	padding: 20px 40px;
+	color: #ddd;
+	background: #111;
+	position: relative;
+	border: 1px solid #ffcc00;
+}
+.woocommerce ul#shipping_method li {
+	margin: 0;
+	/* padding: .25em 0 .25em 22px; */
+	/* text-indent: -22px; */
+	list-style: none;
+}
+.select2-container--default .select2-selection--single {
+	font-size: 16px;
+	height: 44px;
+	padding-top: 7px;
+	border-radius: 0;
+	border-color: #d9d9d9;
+	background-color: #333;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #ddd;
+	line-height: 28px;
+}
+.select2-dropdown{
+  background-color: #333;
 }

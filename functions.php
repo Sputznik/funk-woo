@@ -117,10 +117,12 @@ if ( ! function_exists( 'martivi_recent_products' ) ) {
 
 			?>
 				<div class="row">
-					<div class="col-sm-12" style="text-align:center;">
-						<button class="funk-button-pink" href="https://funkanatomy.com/shop">
+					<div class="col-sm-12" style="text-align:center">
+            <a href="https://funkanatomy.com/shop">
+						<button class="funk-button-pink" type="button">
 							I Want To See More!
 						</button>
+            </a>
 					</div>
 				</div>
 
